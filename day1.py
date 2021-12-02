@@ -1,4 +1,5 @@
 #TASK 1
+#add enumerate instead if 1
 import re
 with open('input1.txt') as f:
     input1 = f.readlines()
@@ -6,7 +7,7 @@ with open('input1.txt') as f:
 i = 0
 while i< len(input1):
     input1[i] = int(re.sub("\n", "", input1[i]))
-    i = i+1
+    i+=1
 
 #print(input1)
 #above reading in the input text file and removing the /n and making a list of inputs
@@ -30,7 +31,7 @@ while s < len(input1):
     s = s+1
 # go through every element and use fucntion to compare to last
 #if smaller add one to count
-print(count)
+print('task 1 answer = ',count)
 
 #TASK 2
 t=0
@@ -51,6 +52,6 @@ while s < len(sumlist):
     s = s+1
 # go through every element and use fucntion to compare to last
 #if smaller add one to count
-print(count)
+print('task 2 answer = ',count)
 
 #reused the code from the first part to compare and add to count
